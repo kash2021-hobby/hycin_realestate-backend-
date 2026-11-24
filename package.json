@@ -1,0 +1,30 @@
+{
+  "name": "@hycin/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "worker": "node src/worker.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "@hycin/shared": "file:../../packages/shared",
+    "bcryptjs": "^2.4.3",
+    "bullmq": "^5.34.5",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "ioredis": "^5.4.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.12.0",
+    "sequelize": "^6.37.5",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "umzug": "^3.8.2",
+    "zod": "^3.24.1"
+  }
+}
